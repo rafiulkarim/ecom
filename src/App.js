@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import HomeScreen from "./components/screens/HomeScreen";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ProductScreen from "./components/screens/ProductScreen";
+import CartScreen from "./components/screens/CartScreen";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Routes>
             <Route path="/" Component={HomeScreen} exact />
             <Route path="/product/:id" Component={ProductScreen} />
+            <Route path="/cart/:id?" Component={CartScreen} />
           </Routes>
         </Container>
       </main>
